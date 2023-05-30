@@ -1,3 +1,19 @@
+.container, .both-sections {
+        -fx-background-image: url('background.jpg');
+        -fx-background-repeat: no-repeat;
+        -fx-background-size: cover;
+}
+
+.both-sections{
+        -fx-padding: 0;
+        -fx-background-color: transparent;
+        -fx-background-insets: 0;
+        -fx-border-width: 0;
+        -fx-border-insets: 0;
+        -fx-min-width: 300px; /* Adjust the width of the divider */
+        -fx-max-width: 400px;
+}
+
 .play-button {
     -fx-background-color: #000000;
     -fx-border-color: #000000;
@@ -40,3 +56,6 @@
 .progress-bar {
     -fx-accent: #00ff00; /* Set progress bar color */
 }
+
+
+

@@ -64,22 +64,24 @@ public class Main extends Application {
 
         // Create the top section with the progress bar
         StackPane topSection = new StackPane();
-        topSection.getChildren().add(progressBar);
+        //topSection.getChildren().add(progressBar);
+        topSection.getStyleClass().add("top-section");
 
         // Create the bottom section with the button container
         StackPane bottomSection = new StackPane();
         bottomSection.getChildren().add(section);
+        bottomSection.getStyleClass().add("bottom-section");
 
         // Create the SplitPane and set the orientation
         SplitPane splitPane = new SplitPane(topSection, bottomSection);
         splitPane.setOrientation(javafx.geometry.Orientation.VERTICAL);
-
+        splitPane.getStyleClass().add("both-sections");
 
         VBox layout = new VBox();
         layout.getChildren().add(splitPane);
         VBox.setVgrow(splitPane, javafx.scene.layout.Priority.ALWAYS);
-        layout.setPadding(new Insets(10));
-
+        layout.setPadding(new Insets(0));
+        layout.getStyleClass().add("container");
 
 
         Scene scene = new Scene(layout, 300, 250);

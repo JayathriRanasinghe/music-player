@@ -1,0 +1,42 @@
+.play-button {
+    -fx-background-color: #000000;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-padding: 0;
+}
+
+.pause-button, .stop-button {
+    -fx-background-color: #000000;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-padding: 0;
+
+}
+
+.play-button:hover,
+.pause-button:hover,
+.stop-button:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-transition-duration: 0.2s;
+}
+
+.play-button,
+.pause-button,
+.stop-button {
+    -fx-transition-duration: 0.2s;
+}
+
+.play-button:pressed,
+.pause-button:pressed,
+.stop-button:pressed {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+
+.progress-bar {
+    -fx-accent: #00ff00; /* Set progress bar color */
+}

@@ -8,17 +8,23 @@ public class Song {
     private String title;
     private String artist;
     private String filePath;
+    private String genre;
     private MediaPlayer mediaPlayer;
     private Media media;
+
 
     public Song(String title, String artist, String filePath) {
         this.title = title;
         this.artist = artist;
         this.filePath = filePath;
+
+
         try {
             System.out.println(filePath);
             this.media = new Media(filePath);
             this.mediaPlayer = new MediaPlayer(media);
+
+            genre = (String) media.getMetadata().get("genre");
 
             System.out.println(media.getWidth());
 
@@ -33,12 +39,24 @@ public class Song {
         return title;
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
     public String getArtist() {
         return artist;
     }
 
     public String getFilePath() {
         return filePath;
+    }
+
+    public MediaPlayer getMediaPlayer() {
+        return mediaPlayer;
+    }
+
+    public Media getMedia() {
+        return media;
     }
 
     public void play() {

@@ -1,5 +1,5 @@
 .container, .both-sections {
-        -fx-background-image: url('background.jpg');
+        -fx-background-image: url('white_background.jpg');
         -fx-background-repeat: no-repeat;
         -fx-background-size: cover;
 }
